@@ -9,7 +9,7 @@ Feature: Starting the game
     Then I should see "What's your name?"
 
   Scenario: Creating a new game
-    Given I am on "New Game"
+    Given I am on "Register"
     When I fill in "Name" with "Richard"
     When I press "Submit"
     Then I should see "Let's play!"
