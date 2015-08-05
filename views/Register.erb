@@ -1,0 +1,17 @@
+<div>
+ <% if !@name || @name == ""%>
+  <form action="/Register">
+   	"What's your name?"
+    <input type="text" name="Name">
+    <input type="submit" value="Submit">
+  </form>
+  Please enter your name
+  <% else %>
+    <p>
+  	Let's play!
+  	</p>
+  	<p>
+  		<a href="/Game">Play Game</a>
+  	</p>
+  <% end %>
+</div>
