@@ -11,5 +11,12 @@ Feature: Starting the game
   Scenario: Creating a new game
     Given I am on "Register"
     When I fill in "Name" with "Richard"
+    Then I press "Submit"
+    When I follow "Play Game"
+    Then I should be on "/Game"
+
+    Given I am on "Register"
+    When I fill in "Name" with ""
     When I press "Submit"
-    Then I should see "Let's play!"
+    Then I should be on "/Register"
+    And should see "Please enter your name"
