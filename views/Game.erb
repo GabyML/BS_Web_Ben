@@ -1,4 +1,10 @@
 <div>
-  <h1> Game started <h1>
-  Welcome <%= @name %>, let's play Battleships!
+  <form action="/Game" method="post">
+    Place your ship
+    <label for="Cordinates">Co-ordinates</label>
+    <input type="radio" name="Coordinates">
+    <label for="Orientation">Orientation</label>
+    <input type="radio" name="Orientation">
+    <input type="submit" value="Start">
+  </form>
 </div>

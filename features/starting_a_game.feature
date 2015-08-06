@@ -20,3 +20,8 @@ Feature: Starting the game
     When I press "Submit"
     Then I should be on "/Register"
     And should see "Please enter your name"
+
+    Given I am on "Game"
+    When I position my ship
+    And I press "Start"
+    Then I should see "Waiting for player2"

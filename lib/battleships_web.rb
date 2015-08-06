@@ -12,8 +12,9 @@ class BattleshipsWeb < Sinatra::Base
   	erb :Register
   end
 
-  get '/Game' do
-  	@name = params[:Name]
+  post '/Game' do
+  	@coordinates = params[:Coordinates]
+    @Orientation = params[:Orientation]
   	erb :Game
   end
 
