@@ -23,5 +23,5 @@ Feature: Starting the game
 
     Given I am on "Game"
     When I position my ship
-    And I press "Start"
+    And I press "Start Game"
     Then I should see "Waiting for player2"
